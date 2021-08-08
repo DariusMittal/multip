@@ -1,0 +1,20 @@
+<html>  
+ <head>
+  <title>Multiplication Table</title>
+  <link rel="icon"  href="pkloi.jpg" type="image" size="60*60"/>
+ </head>
+ <body style="background-color:mediumaquamarine;" >
+  <script>
+   var a=prompt("Enter the no. whose table is to be created");
+   var b=prompt("Enter the digit up table is required");
+   document.write("<table border='8' width='1200'  cellpadding='10%' align='center' style='text-align: center; font-family: open sans; font-size:30px; background-color: yellow;>'")
+   document.write("<tr><th colspan='5' style=' border-background-color: navy; color: maroon; font-size: 40px;'>Multiplication table</th> ")
+   for ( var c=1;c<=b;c++ ) 
+   {
+     var d=a*c;
+     document.write("<tr><td>"+a +"</td><td> x </td><td>"+ c +"</td><td> = </td><td>"+d+ "</td></tr>")   	
+   }
+   document.write("</table>")
+  </script>
+ </body>
+</html>
